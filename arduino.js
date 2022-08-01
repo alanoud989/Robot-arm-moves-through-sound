@@ -27,7 +27,6 @@ const enc = new TextEncoder();
           // Filter on devices with the Arduino USB vendor ID.
           filters: [{ usbVendorId: 0x2341 }];
         };
-
         // Request an Arduino from the user.
         port = await navigator.serial.requestPort(requestOptions);
         await port.open({ baudRate: 115200 });
