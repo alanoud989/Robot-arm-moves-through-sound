@@ -1,7 +1,7 @@
 let isConnectted = false;
 let port;
 let writer;
-var target_id;
+var target;
 const enc = new TextEncoder();
 
       async function onChangespeech() {
