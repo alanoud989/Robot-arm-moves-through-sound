@@ -1,8 +1,8 @@
- let isConnectted = false;
-      let port;
-      let writer;
-      var target_id;
-      const enc = new TextEncoder();
+let isConnectted = false;
+let port;
+let writer;
+var target_id;
+const enc = new TextEncoder();
 
       async function onChangespeech() {
         if (!isConnectted) {
@@ -19,15 +19,13 @@
         } catch (e) {
           console.log(e);
         }
-      }
-    
-      
+      } 
 
     async function onConnectUsb() {
       try {
         const requestOptions = {
           // Filter on devices with the Arduino USB vendor ID.
-          filters: [{ usbVendorId: 0x2341 }],
+          filters: [{ usbVendorId: 0x2341 }];
         };
 
         // Request an Arduino from the user.
