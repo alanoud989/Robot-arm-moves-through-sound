@@ -34,5 +34,4 @@ const enc = new TextEncoder();
         isConnectted = true;
       } catch (e) {
         console.log("err", e);
-      }
-    }
+      }}
